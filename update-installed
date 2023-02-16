@@ -1,3 +1,0 @@
-#!/bin/bash
-cat ~/.bash_history | grep "apt-get install" > ~/dotfiles/installed-so-far
-

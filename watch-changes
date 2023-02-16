@@ -1,0 +1,3 @@
+#!/bin/bash
+echo "Watching for changes to $1 and running $2"
+inotifywait -m -e modify $1 | gawk '{print $1$3; fflush()}' | xargs -L 1 $2
